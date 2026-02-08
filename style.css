@@ -412,3 +412,77 @@ html {
     background: var(--accent);
     color: white;
 }
+/* App Showcase - Controlled Size */
+.app-showcase {
+    padding: 5rem 0;
+    background: var(--bg);
+}
+
+.app-showcase h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.showcase-item {
+    text-align: center;
+}
+
+.showcase-item img {
+    width: 100%;
+    max-width: 280px; /* Controls max size - won't be too big */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.showcase-item img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.showcase-caption {
+    margin-top: 1rem;
+    color: var(--text-light);
+    font-size: 0.9375rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .showcase-item img {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 640px) {
+    .app-showcase {
+        padding: 3.5rem 0;
+    }
+    
+    .app-showcase h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .showcase-item img {
+        max-width: 100%;
+    }
+}

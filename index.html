@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendTrail — Track Your Finances, Own Your Data</title>
+  <meta name="description" content="A beautiful, privacy-first expense and income tracker. Works 100% offline. No accounts, no servers, no tracking. Free forever.">
+  <meta name="keywords" content="expense tracker, budget app, finance tracker, privacy, offline, PWA, multi-profile, analytics">
+  <meta name="author" content="Manan Madani">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mananmadani.github.io/SpendTrail-Website/">
+  <meta property="og:title" content="SpendTrail — Track Your Finances, Own Your Data">
+  <meta property="og:description" content="Privacy-first expense tracker. 100% offline. No accounts, no servers. Free forever.">
+  <meta property="og:image" content="https://mananmadani.github.io/SpendTrail/SpendTrail.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SpendTrail — Privacy-first expense tracker">
+  <meta property="og:site_name" content="SpendTrail">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpendTrail — Track Your Finances, Own Your Data">
+  <meta name="twitter:description" content="Privacy-first expense tracker. 100% offline. No accounts, no servers. Free forever.">
+  <meta name="twitter:image" content="https://mananmadani.github.io/SpendTrail/SpendTrail.png">
+  <meta name="twitter:image:alt" content="SpendTrail — Privacy-first expense tracker">
+
+  <!-- Canonical & Robots -->
+  <link rel="canonical" href="https://mananmadani.github.io/SpendTrail-Website/">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#08080F">
+  <link rel="icon" type="image/png" href="https://mananmadani.github.io/SpendTrail/SpendTrail.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────── -->
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="https://mananmadani.github.io/SpendTrail/SpendTrail.png" alt="SpendTrail" class="logo-img">
+      <span class="logo-text">SpendTrail</span>
+    </a>
+    <nav class="nav-pill" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#install">Install</a>
+    </nav>
+    <a href="https://mananmadani.github.io/SpendTrail/" class="btn-header" target="_blank" rel="noopener">
+      Open App
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <a href="#features" class="m-link">Features</a>
+    <a href="#privacy" class="m-link">Privacy</a>
+    <a href="#install" class="m-link">Install</a>
+    <a href="https://mananmadani.github.io/SpendTrail/" class="btn-primary m-cta" target="_blank" rel="noopener">Open App ↗</a>
+  </div>
+</header>
+
+<!-- ── HERO ───────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-badge anim-1">
+      <span class="badge-dot" aria-hidden="true"></span>
+      Free &nbsp;·&nbsp; Open Source &nbsp;·&nbsp; v4.0.8
+    </div>
+    <h1 class="hero-h1 anim-2">
+      Your Money.<br>
+      Your Device.<br>
+      <em>Your Privacy.</em>
+    </h1>
+    <p class="hero-sub anim-3">
+      SpendTrail is a beautiful expense and income tracker that lives entirely on your device.
+      No accounts. No servers. No one watching your money.
+    </p>
+    <div class="hero-btns anim-4">
+      <a href="https://mananmadani.github.io/SpendTrail/" class="btn-primary" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Open App — It's Free
+      </a>
+      <a href="https://github.com/mananmadani/SpendTrail" class="btn-ghost" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TICKER ─────────────────────────────────── -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <span class="tick">◆ 100% Offline</span>
+    <span class="tick">◆ No Account Required</span>
+    <span class="tick">◆ AES-256 Encrypted Backups</span>
+    <span class="tick">◆ 5 Independent Profiles</span>
+    <span class="tick">◆ Visual Analytics</span>
+    <span class="tick">◆ PDF Export</span>
+    <span class="tick">◆ 30+ Currencies</span>
+    <span class="tick">◆ Free Forever</span>
+    <span class="tick">◆ Open Source</span>
+    <span class="tick">◆ Zero Tracking</span>
+    <span class="tick">◆ 100% Offline</span>
+    <span class="tick">◆ No Account Required</span>
+    <span class="tick">◆ AES-256 Encrypted Backups</span>
+    <span class="tick">◆ 5 Independent Profiles</span>
+    <span class="tick">◆ Visual Analytics</span>
+    <span class="tick">◆ PDF Export</span>
+    <span class="tick">◆ 30+ Currencies</span>
+    <span class="tick">◆ Free Forever</span>
+    <span class="tick">◆ Open Source</span>
+    <span class="tick">◆ Zero Tracking</span>
+  </div>
+</div>
+
+<!-- ── SCREENSHOTS ─────────────────────────────── -->
+<section class="ss-section">
+  <div class="wrap ss-wrap">
+
+    <!-- Phone cluster -->
+    <div class="ss-cluster reveal" id="ss-cluster">
+
+      <!-- Far left -->
+      <div class="phone-mockup ss-phone-far-left">
+        <img src="https://mananmadani.github.io/SpendTrail/screenshots/ledger.jpg"
+             alt="Ledger view" loading="lazy">
+      </div>
+
+      <!-- Left -->
+      <div class="phone-mockup ss-phone-left">
+        <img src="https://mananmadani.github.io/SpendTrail/screenshots/add-transaction.jpg"
+             alt="Add transaction" loading="lazy">
+      </div>
+
+      <!-- Centre / hero -->
+      <div class="phone-mockup ss-phone-main">
+        <img src="https://mananmadani.github.io/SpendTrail/screenshots/dashboard.jpg"
+             alt="Dashboard" loading="lazy">
+      </div>
+
+      <!-- Right -->
+      <div class="phone-mockup ss-phone-right">
+        <img src="https://mananmadani.github.io/SpendTrail/screenshots/analytics.jpg"
+             alt="Analytics" loading="lazy">
+      </div>
+
+      <!-- Far right -->
+      <div class="phone-mockup ss-phone-far-right">
+        <img src="https://mananmadani.github.io/SpendTrail/screenshots/more.jpg"
+             alt="More options" loading="lazy">
+      </div>
+
+    </div><!-- /ss-cluster -->
+
+    <!-- Mobile scroll dots -->
+    <div class="ss-dots" id="ss-dots" aria-hidden="true">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <p class="ss-swipe-hint">← Swipe to see more →</p>
+
+    <div class="ss-glow" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ── STATS ──────────────────────────────────── -->
+<section class="stats-section reveal">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-cell"><div class="stat-num">0</div><div class="stat-lbl">Servers. Ever.</div></div>
+      <div class="stat-cell"><div class="stat-num">5</div><div class="stat-lbl">Independent Profiles</div></div>
+      <div class="stat-cell"><div class="stat-num">30+</div><div class="stat-lbl">Currencies Supported</div></div>
+      <div class="stat-cell"><div class="stat-num">&#8734;</div><div class="stat-lbl">Free. Forever.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ───────────────────────────────── -->
+<section class="features-section" id="features">
+  <div class="wrap">
+    <div class="section-hd reveal">
+      <div class="eyebrow">Features</div>
+      <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+      <p class="section-sub">Built for people who want a clean, honest finance tracker — no bloat, no subscriptions, no surprises.</p>
+    </div>
+    <div class="bento reveal">
+      <div class="bcard bwide">
+        <div class="bicon">&#128202;</div>
+        <h3>Visual Analytics</h3>
+        <p>Beautiful pie charts, bar graphs, and 7/30/90-day trend lines. Drill into any category for a full breakdown.</p>
+        <div class="tags"><span class="tag">Pie Charts</span><span class="tag">Trend Lines</span><span class="tag">Category Drill-down</span></div>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128100;</div>
+        <h3>Multiple Profiles</h3>
+        <p>Up to 5 completely isolated profiles — personal, business, travel, family. Each with its own data and currency.</p>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128176;</div>
+        <h3>Real-Time Balance</h3>
+        <p>Your balance updates the instant you add a transaction. Always know exactly where you stand.</p>
+      </div>
+      <div class="bcard bwide">
+        <div class="bicon">&#128274;</div>
+        <h3>AES-256 Encrypted Backups</h3>
+        <p>Encrypted with a password only you know — AES-256 encryption. No password, no access. Not even by us.</p>
+        <div class="tags"><span class="tag">AES-256</span><span class="tag">Zero Knowledge</span></div>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128196;</div>
+        <h3>PDF Export</h3>
+        <p>Professional financial reports for any date range. Export plain or encrypted.</p>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128203;</div>
+        <h3>Complete Ledger</h3>
+        <p>Browse every transaction, search by category or note, filter by income or expense.</p>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128241;</div>
+        <h3>Installs Everywhere</h3>
+        <p>Works as a PWA on Android, iPhone, and desktop. Full offline support after first load.</p>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#128178;</div>
+        <h3>30+ Currencies</h3>
+        <p>&#8377; $ &#8364; &#163; &#165; and 25 more. Each profile has its own independent currency setting.</p>
+      </div>
+      <div class="bcard">
+        <div class="bicon">&#127358;</div>
+        <h3>Free Forever</h3>
+        <p>No subscriptions. No premium tier. No ads. Open source under MIT License.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRIVACY ────────────────────────────────── -->
+<section class="privacy-section" id="privacy">
+  <div class="wrap">
+    <div class="privacy-card reveal">
+      <div class="privacy-left">
+        <div class="eyebrow">Privacy</div>
+        <h2 class="section-title">Your data never<br>leaves your device.</h2>
+        <p class="privacy-desc">SpendTrail has zero backend. No servers. No cloud. No analytics.<br>It's not a policy — it's the architecture.</p>
+      </div>
+      <ul class="privacy-list">
+        <li><span class="check">&#10003;</span>No account or email required — ever</li>
+        <li><span class="check">&#10003;</span>No servers, no cloud, no network requests</li>
+        <li><span class="check">&#10003;</span>No analytics, tracking, or usage data collected</li>
+        <li><span class="check">&#10003;</span>No ads. No advertisers. No data brokers.</li>
+        <li><span class="check">&#10003;</span>Works completely offline after first load</li>
+        <li><span class="check">&#10003;</span>Open source — read every line on GitHub</li>
+        <li><span class="check">&#10003;</span>AES-256 encrypted exports — zero knowledge</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ── INSTALL ────────────────────────────────── -->
+<section class="install-section" id="install">
+  <div class="wrap">
+    <div class="section-hd reveal">
+      <div class="eyebrow">Installation</div>
+      <h2 class="section-title">On your device<br>in 30 seconds.</h2>
+      <p class="section-sub">No app store. No download. Open in your browser and install.</p>
+    </div>
+    <div class="install-grid reveal">
+
+      <div class="icard">
+        <div class="icard-top">
+          <div class="iicon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M17.6 3.8 15.5 6A5.93 5.93 0 0 0 12 5a5.93 5.93 0 0 0-3.5 1L6.4 3.8A9.93 9.93 0 0 1 12 2a9.93 9.93 0 0 1 5.6 1.8Z" fill="currentColor" opacity=".6"/>
+              <rect x="2" y="7" width="20" height="12" rx="2" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity=".08"/>
+              <circle cx="8.5" cy="13" r="1.5" fill="currentColor"/>
+              <circle cx="15.5" cy="13" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Android / Chrome</h3>
+        </div>
+        <ol class="isteps">
+          <li><span class="sn">1</span>Tap "Open App" and let it load</li>
+          <li><span class="sn">2</span>Tap &#8942; then "Install app" or "Add to Home Screen"</li>
+          <li><span class="sn">3</span>Confirm the installation</li>
+          <li><span class="sn">4</span>SpendTrail is on your home screen</li>
+        </ol>
+      </div>
+
+      <div class="icard">
+        <div class="icard-top">
+          <div class="iicon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="6" y="1" width="12" height="22" rx="2.5" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity=".08"/>
+              <line x1="9.5" y1="4.5" x2="14.5" y2="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="12" cy="20" r="1" fill="currentColor"/>
+              <path d="M12 9v4M10 11l2-2 2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>iPhone / Safari</h3>
+        </div>
+        <ol class="isteps">
+          <li><span class="sn">1</span>Open in Safari — not Chrome</li>
+          <li><span class="sn">2</span>Tap the Share button (&#9633;&#8593;) at the bottom</li>
+          <li><span class="sn">3</span>Tap "Add to Home Screen"</li>
+          <li><span class="sn">4</span>Tap "Add" in the top right</li>
+        </ol>
+      </div>
+
+      <div class="icard">
+        <div class="icard-top">
+          <div class="iicon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="3" width="20" height="13" rx="2" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity=".08"/>
+              <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="16" x2="12" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 7v4M10 9l2-2 2 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Desktop</h3>
+        </div>
+        <ol class="isteps">
+          <li><span class="sn">1</span>Open in Chrome, Edge, or Brave</li>
+          <li><span class="sn">2</span>Click install icon &#8853; in the address bar</li>
+          <li><span class="sn">3</span>Or Menu then "Install SpendTrail"</li>
+          <li><span class="sn">4</span>Click "Install" — runs like a native app</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ────────────────────────────────────── -->
+<section class="cta-section reveal">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="wrap cta-inner">
+    <h2 class="section-title">Start tracking today.<br>No sign-up. No catch.</h2>
+    <p class="section-sub">Open in your browser right now. Free, forever.</p>
+    <div class="cta-btns">
+      <a href="https://mananmadani.github.io/SpendTrail/" class="btn-primary" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Open SpendTrail
+      </a>
+      <a href="https://github.com/mananmadani/SpendTrail" class="btn-ghost" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        Star on GitHub
+      </a>
+    </div>
+    <p class="version-note">v4.0.8 &nbsp;&#183;&nbsp; Last updated March 2026 &nbsp;&#183;&nbsp; MIT License</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="https://mananmadani.github.io/SpendTrail/SpendTrail.png" alt="SpendTrail" class="logo-img">
+        <span class="logo-text">SpendTrail</span>
+      </a>
+      <p>A privacy-first expense and income tracker.<br>Your data stays on your device. Always.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Links</h5>
+      <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">GitHub</a>
+      <a href="license.html">MIT License</a>
+      <a href="https://github.com/mananmadani/SpendTrail/issues" target="_blank" rel="noopener">Report Issue</a>
+      <a href="https://mananmadani.github.io/SpendTrail/" target="_blank" rel="noopener">Open App</a>
+    </div>
+    <div class="footer-col">
+      <h5>Developer</h5>
+      <a href="https://github.com/mananmadani" target="_blank" rel="noopener">Manan Madani</a>
+      <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">Source Code</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-btm-inner">
+      <span>&#169; 2026 Manan Madani</span>
+      <span class="mit-badge">&#9878; MIT License &#8212; Open Source</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

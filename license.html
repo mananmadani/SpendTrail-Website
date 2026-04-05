@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License — SpendTrail</title>
+  <meta name="author" content="Manan Madani">
+  <link rel="icon" type="image/png" href="https://mananmadani.github.io/SpendTrail/SpendTrail.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .license-page { padding: calc(var(--header-h) + 3rem) 0 5rem; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      color: var(--p3); font-size: .9rem; font-weight: 500;
+      margin-bottom: 2.5rem;
+      transition: gap .2s;
+    }
+    .back-link:hover { gap: .75rem; }
+    .license-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem 1.75rem;
+      max-width: 760px;
+    }
+    @media(min-width:640px){ .license-card{ padding: 3rem; } }
+    .license-card h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.6rem,4vw,2rem);
+      font-weight: 800; margin-bottom: .5rem;
+    }
+    .lic-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--p1), var(--p2));
+      color: #fff;
+      font-size: .75rem; font-weight: 600;
+      padding: .22rem .75rem;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+    }
+    .license-card pre {
+      font-family: 'SFMono-Regular', 'Consolas', monospace;
+      font-size: .85rem; line-height: 1.8;
+      color: var(--muted);
+      white-space: pre-wrap; word-break: break-word;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem; margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="https://mananmadani.github.io/SpendTrail/SpendTrail.png" alt="SpendTrail" class="logo-img">
+      <span class="logo-text">SpendTrail</span>
+    </a>
+  </div>
+</header>
+
+<section class="license-page">
+  <div class="wrap">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to SpendTrail
+    </a>
+    <div class="license-card">
+      <h1>MIT License</h1>
+      <span class="lic-badge">Open Source</span>
+      <pre>MIT License
+
+Copyright (c) 2026 Manan Madani
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="https://mananmadani.github.io/SpendTrail/SpendTrail.png" alt="SpendTrail" class="logo-img">
+        <span class="logo-text">SpendTrail</span>
+      </a>
+      <p>A privacy-first expense and income tracker.<br>Your data stays on your device. Always.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Links</h5>
+      <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">GitHub</a>
+      <a href="license.html">MIT License</a>
+      <a href="https://github.com/mananmadani/SpendTrail/issues" target="_blank" rel="noopener">Report Issue</a>
+    </div>
+    <div class="footer-col">
+      <h5>Developer</h5>
+      <a href="https://github.com/mananmadani" target="_blank" rel="noopener">Manan Madani</a>
+      <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">Source Code</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-btm-inner">
+      <span>&#169; 2026 Manan Madani</span>
+      <span class="mit-badge">&#9878; MIT License &#8212; Open Source</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>SpendTrail: free, private expense tracker that works offline</title>
+  <meta name="description" content="SpendTrail is a free, open-source expense and income tracker that runs in your browser. No account, no server, no ads. Works offline, supports 5 profiles, 30 currencies, charts, PDF export and AES-256 encrypted backups.">
+  <meta name="keywords" content="expense tracker, income tracker, budget app, private finance app, offline expense tracker, no signup expense tracker, open source expense tracker, PWA finance app, personal finance tracker, spending tracker, free budget tracker, expense tracker India">
+  <meta name="author" content="Manan Madani">
+  <meta name="application-name" content="SpendTrail">
+  <meta name="generator" content="Hand-written HTML, CSS and JavaScript">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#EAF0E8">
+  <meta name="rating" content="general">
+  <meta name="coverage" content="Worldwide">
+  <meta name="language" content="English">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+
+  <link rel="canonical" href="https://mananmadani.github.io/SpendTrail-Website/">
+  <link rel="alternate" type="text/plain" href="https://mananmadani.github.io/SpendTrail-Website/llms.txt" title="llms.txt">
+  <link rel="alternate" type="text/plain" href="https://mananmadani.github.io/SpendTrail-Website/llms-full.txt" title="llms-full.txt">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <link rel="license" href="license.html">
+  <link rel="author" href="https://github.com/mananmadani">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="SpendTrail">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SpendTrail">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://mananmadani.github.io/SpendTrail-Website/">
+  <meta property="og:title" content="SpendTrail: a money tracker that never leaves your phone">
+  <meta property="og:description" content="Free, open-source expense and income tracker. No account, no server, no ads. Works offline and installs like an app.">
+  <meta property="og:image" content="https://mananmadani.github.io/SpendTrail-Website/assets/og-image.png">
+  <meta property="og:image:secure_url" content="https://mananmadani.github.io/SpendTrail-Website/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SpendTrail: a money tracker that never leaves your phone, shown with the app dashboard on a phone">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SpendTrail: a money tracker that never leaves your phone">
+  <meta name="twitter:description" content="Free, open-source expense and income tracker. No account, no server, no ads. Works offline and installs like an app.">
+  <meta name="twitter:image" content="https://mananmadani.github.io/SpendTrail-Website/assets/og-image.png">
+  <meta name="twitter:image:alt" content="SpendTrail app dashboard on a phone beside the headline">
+
+  <link rel="preload" href="fonts/pagella-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/inter-semibold.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" as="image" href="assets/shots/dashboard.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mananmadani.github.io/SpendTrail-Website/#website",
+        "url": "https://mananmadani.github.io/SpendTrail-Website/",
+        "name": "SpendTrail",
+        "alternateName": ["SpendTrail Expense Tracker", "SpendTrail App"],
+        "description": "Official website of SpendTrail, a free, open-source, privacy-first expense and income tracker.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://mananmadani.github.io/SpendTrail-Website/#author" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mananmadani.github.io/SpendTrail-Website/#author",
+        "name": "Manan Madani",
+        "url": "https://github.com/mananmadani",
+        "sameAs": ["https://github.com/mananmadani"]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://mananmadani.github.io/SpendTrail-Website/#app",
+        "name": "SpendTrail",
+        "alternateName": "SpendTrail expense tracker",
+        "description": "A free, open-source expense and income tracker that runs entirely in the browser as a Progressive Web App. It needs no account and has no server: all data stays on the device in IndexedDB. Works offline, supports up to 5 isolated profiles, 30 currency symbols, analytics charts, PDF statements, AES-256 encrypted backups and light and dark themes.",
+        "url": "https://mananmadani.github.io/SpendTrail/",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Expense tracker",
+        "operatingSystem": "Android, iOS, Windows, macOS, Linux, ChromeOS (any modern web browser)",
+        "browserRequirements": "Requires a modern browser with IndexedDB and service worker support",
+        "softwareVersion": "4.0.17",
+        "datePublished": "2025-01-01",
+        "dateModified": "2026-11-08",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "license": "https://opensource.org/licenses/MIT",
+        "codeRepository": "https://github.com/mananmadani/SpendTrail",
+        "image": "https://mananmadani.github.io/SpendTrail-Website/assets/icons/icon-512.png",
+        "screenshot": [
+          "https://mananmadani.github.io/SpendTrail-Website/assets/shots/dashboard.webp",
+          "https://mananmadani.github.io/SpendTrail-Website/assets/shots/add-transaction.webp",
+          "https://mananmadani.github.io/SpendTrail-Website/assets/shots/analytics.webp",
+          "https://mananmadani.github.io/SpendTrail-Website/assets/shots/ledger.webp"
+        ],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        "featureList": [
+          "Income and expense tracking with categories and notes",
+          "Works fully offline after the first load",
+          "No account, no server, no analytics, no ads",
+          "Up to 5 isolated profiles, each with its own currency",
+          "30 currency symbols",
+          "Pie, bar and 7/30/90-day trend charts",
+          "Searchable ledger with income and expense filters",
+          "Custom date-range statements and PDF export",
+          "Plain JSON or AES-256 encrypted backups",
+          "Light and dark themes",
+          "Installable on Android, iPhone and desktop"
+        ],
+        "author": { "@id": "https://mananmadani.github.io/SpendTrail-Website/#author" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mananmadani.github.io/SpendTrail-Website/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is SpendTrail really free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. SpendTrail is free and open source under the MIT licence. There is no paid tier, no subscription and no advertising." } },
+          { "@type": "Question", "name": "Where is my data stored?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Only on your own device, in your browser's IndexedDB storage. SpendTrail has no backend server, so your entries are never uploaded anywhere." } },
+          { "@type": "Question", "name": "Does SpendTrail work offline?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the first visit a service worker caches the app, so you can add and review transactions with no internet connection." } },
+          { "@type": "Question", "name": "Can I sync SpendTrail between my phone and computer?",
+            "acceptedAnswer": { "@type": "Answer", "text": "There is no automatic sync, because there is no server. To move data to another device, create a backup file (plain JSON or AES-256 encrypted) in More, Backup and Restore, then restore it on the other device." } },
+          { "@type": "Question", "name": "What happens if I clear my browser data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Clearing site data for SpendTrail also deletes its entries, since they live in the browser. Make a backup from More, Backup and Restore before clearing data or switching browsers." } },
+          { "@type": "Question", "name": "Does SpendTrail convert currencies?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. You choose one of 30 currency symbols per profile and it changes how amounts are displayed. No exchange rates or conversions are applied." } },
+          { "@type": "Question", "name": "Can I install SpendTrail on iPhone and Android?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Open the app in Safari on iPhone and choose Share, then Add to Home Screen. On Android, open it in Chrome and choose Install app. On desktop, use the install icon in Chrome, Edge or Brave." } },
+          { "@type": "Question", "name": "Is there a dark mode?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Since version 4.0.17 you can choose Light or Dark under More, Appearance." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a href="./" class="brand" aria-label="SpendTrail home">
+      <img src="assets/icons/icon-192.png" width="34" height="34" alt="">
+      SpendTrail
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#use">What it does</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#install">Install</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://mananmadani.github.io/SpendTrail/" class="btn btn-solid btn-sm" target="_blank" rel="noopener">Open the app</a>
+      <button class="menu-btn" id="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav"><span></span></button>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
+  <a href="#use">What it does</a>
+  <a href="#privacy">Privacy</a>
+  <a href="#install">Install</a>
+  <a href="#faq">Questions</a>
+</nav>
+
+<div class="page" id="page">
+  <div class="trail" id="trail" aria-hidden="true">
+    <svg id="trail-svg" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="river-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="100">
+          <stop offset="0" stop-color="#3F8F4C"/>
+          <stop offset="1" stop-color="#14677E"/>
+        </linearGradient>
+      </defs>
+      <path class="bed"  id="trail-bed"  d=""/>
+      <path class="flow" id="trail-flow" d=""/>
+      <g id="trail-coins"></g>
+    </svg>
+  </div>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title" data-stop>A money tracker that never leaves your phone.</h1>
+          <p class="hero-lede">SpendTrail records your income and spending, draws the charts and writes the PDF statements, all inside your browser. No account, no server, no ads.</p>
+          <div class="hero-actions">
+            <a href="https://mananmadani.github.io/SpendTrail/" class="btn btn-solid" target="_blank" rel="noopener">Open SpendTrail
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a href="https://github.com/mananmadani/SpendTrail" class="btn btn-line" target="_blank" rel="noopener">Read the source</a>
+          </div>
+          <p class="hero-fine">Free under the MIT licence. Version 4.0.17, November 2026, now with dark mode. Runs on Android, iPhone and desktop.</p>
+        </div>
+
+        <div class="devices" aria-label="SpendTrail screens">
+          <div class="phone back"><img src="assets/shots/analytics.webp" width="720" height="1560" alt="SpendTrail analytics screen with a doughnut chart of spending by category" loading="eager"></div>
+          <div class="phone main"><img src="assets/shots/dashboard.webp" width="720" height="1560" alt="SpendTrail home screen showing balance, income, expense and recent transactions" fetchpriority="high"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bend" data-bend></div>
+
+    <!-- What it does -->
+    <section class="section" id="use" aria-labelledby="use-title">
+      <div class="wrap">
+        <div class="sect-head">
+          <h2 id="use-title" data-stop>Four screens do most of the work.</h2>
+          <p class="lede">Log a payment, see where the money went, look up an old entry, and keep home and work separate. Everything else stays out of the way.</p>
+        </div>
+
+        <div class="rows">
+          <article class="row">
+            <div class="row-copy">
+              <h3>Log a payment in a few taps.</h3>
+              <p>Enter an amount, a category and a date, and add a note if you want one. Categories you have used before are suggested as you type, and your balance updates the moment you save.</p>
+              <ul>
+                <li>Expense and income share one quick form</li>
+                <li>Long-press any entry to edit or delete it</li>
+              </ul>
+            </div>
+            <div class="row-art art-leaf"><div class="phone"><img src="assets/shots/add-transaction.webp" width="720" height="1560" alt="SpendTrail add transaction form with amount, category, date and note" loading="lazy"></div></div>
+          </article>
+
+          <article class="row flip">
+            <div class="row-copy">
+              <h3>See where it went.</h3>
+              <p>A doughnut chart splits spending by category, bars rank every category, and a trend line shows the last 7, 30 or 90 days. Switch to income with one tap.</p>
+              <ul>
+                <li>Small categories group into "Others", which you can open up</li>
+                <li>Charts follow your light or dark theme</li>
+              </ul>
+            </div>
+            <div class="row-art art-river"><div class="phone"><img src="assets/shots/analytics.webp" width="720" height="1560" alt="SpendTrail analytics with expense breakdown, category bars and 30-day trend" loading="lazy"></div></div>
+          </article>
+
+          <article class="row">
+            <div class="row-copy">
+              <h3>Find any entry later.</h3>
+              <p>The ledger groups everything by category. Search by category or note, filter to income or expense, and open a category to see every entry in it.</p>
+              <ul>
+                <li>Build a custom statement for any date range</li>
+                <li>Export it as a colour-coded PDF with totals</li>
+              </ul>
+            </div>
+            <div class="row-art art-indigo"><div class="phone"><img src="assets/shots/ledger.webp" width="720" height="1560" alt="SpendTrail ledger listing categories with totals" loading="lazy"></div></div>
+          </article>
+
+          <article class="row flip">
+            <div class="row-copy">
+              <h3>Keep home and work apart.</h3>
+              <p>Create up to five profiles, such as personal, business, travel or family. Each has its own entries and its own currency, and deleting one never touches the others.</p>
+              <ul>
+                <li>Pick light or dark under More, Appearance</li>
+                <li>Back up one profile at a time, plain or encrypted</li>
+              </ul>
+            </div>
+            <div class="row-art art-mist"><div class="phone"><img src="assets/shots/more.webp" width="720" height="1560" alt="SpendTrail More menu with profiles, backup, currency and appearance" loading="lazy"></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="bend" data-bend></div>
+
+    <!-- The rest -->
+    <section class="section" aria-labelledby="rest-title">
+      <div class="wrap">
+        <div class="sect-head">
+          <h2 id="rest-title" data-stop>And the details you would ask about.</h2>
+        </div>
+        <div class="rest">
+          <div class="rest-item"><h3>Works offline</h3><p>After the first visit the app is cached on your device. Add entries on a plane or in a basement shop.</p></div>
+          <div class="rest-item"><h3>30 currency symbols</h3><p>₹, $, €, £, ¥ and 25 more, set separately for each profile. It changes how amounts look; no exchange rates are applied.</p></div>
+          <div class="rest-item"><h3>Encrypted backups</h3><p>Save a JSON backup, or lock it with a password using AES-256. Lose the password and nobody, including the developer, can open it.</p></div>
+          <div class="rest-item"><h3>PDF statements</h3><p>Export every entry or choose a date range. Dates include the year, so old statements stay unambiguous.</p></div>
+          <div class="rest-item"><h3>Installs like an app</h3><p>It is a Progressive Web App: add it to your home screen and it opens full screen with its own icon. No app store involved.</p></div>
+          <div class="rest-item"><h3>Safe deletion</h3><p>Deleting a profile or clearing its data means typing the profile's name first, so a stray tap cannot erase anything.</p></div>
+          <div class="rest-item"><h3>Open source</h3><p>Plain JavaScript, no framework and no build step. <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">Read every line on GitHub</a>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bend" data-bend></div>
+
+    <!-- Privacy -->
+    <div class="privacy on-deep" id="privacy">
+      <section class="section" aria-labelledby="privacy-title">
+        <div class="wrap privacy-grid">
+          <div>
+            <h2 id="privacy-title" data-stop>There is no server, so there is nothing to breach.</h2>
+            <p class="lede">SpendTrail was built without a backend. Your entries sit in your browser's own storage and go nowhere. That is how it is built, not a promise in a policy.</p>
+          </div>
+          <div>
+            <table class="compare">
+              <caption>How it differs from a cloud-synced finance app</caption>
+              <thead><tr><th scope="col"></th><th scope="col">Typical cloud app</th><th scope="col">SpendTrail</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Sign-up</th><td data-label="Typical cloud app">Email or phone number</td><td class="us" data-label="SpendTrail">None</td></tr>
+                <tr><th scope="row">Where entries live</th><td data-label="Typical cloud app">The company's servers</td><td class="us" data-label="SpendTrail">Your device only</td></tr>
+                <tr><th scope="row">No signal</th><td data-label="Typical cloud app">Limited or unusable</td><td class="us" data-label="SpendTrail">Works fully</td></tr>
+                <tr><th scope="row">Ads and analytics</th><td data-label="Typical cloud app">Common</td><td class="us" data-label="SpendTrail">None</td></tr>
+                <tr><th scope="row">Price</th><td data-label="Typical cloud app">Free tier plus subscription</td><td class="us" data-label="SpendTrail">Free, no tiers</td></tr>
+                <tr><th scope="row">Source code</th><td data-label="Typical cloud app">Closed</td><td class="us" data-label="SpendTrail">Open, MIT licence</td></tr>
+              </tbody>
+            </table>
+            <p class="tradeoff"><strong>The trade-off:</strong> with no server there is no automatic sync. To move to a new phone, make a backup file and restore it there. Clearing your browser's site data also clears SpendTrail, so back up first.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="bend" data-bend></div>
+
+    <!-- Install -->
+    <section class="section" id="install" aria-labelledby="install-title">
+      <div class="wrap">
+        <div class="sect-head">
+          <h2 id="install-title" data-stop>On your home screen in under a minute.</h2>
+          <p class="lede">No app store and nothing to download. Open SpendTrail in your browser, then add it like this.</p>
+        </div>
+        <div class="install">
+          <div>
+            <h3>Android, in Chrome</h3>
+            <ol class="steps">
+              <li>Open SpendTrail and let it load once.</li>
+              <li>Tap the ⋮ menu, then <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+              <li>Confirm. The icon appears on your home screen.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>iPhone, in Safari</h3>
+            <ol class="steps">
+              <li>Open SpendTrail in Safari. Other iPhone browsers cannot install it.</li>
+              <li>Tap the Share button, then <strong>Add to Home Screen</strong>.</li>
+              <li>Tap <strong>Add</strong> in the top right.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Desktop browsers</h3>
+            <ol class="steps">
+              <li>Open SpendTrail in Chrome, Edge or Brave.</li>
+              <li>Click the install icon at the right end of the address bar.</li>
+              <li>Click <strong>Install</strong>. It opens in its own window.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bend" data-bend></div>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="sect-head">
+          <h2 id="faq-title" data-stop>Questions people ask first.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is SpendTrail really free?</summary>
+            <div class="answer"><p>Yes. It is open source under the MIT licence, with no paid tier, no subscription and no advertising.</p></div>
+          </details>
+          <details>
+            <summary>Where is my data stored?</summary>
+            <div class="answer"><p>Only on your device, in your browser's IndexedDB storage. There is no backend server, so your entries are never uploaded.</p><p>The first time you open the app it downloads its chart, PDF and encryption libraries from public CDNs and then caches them. Your entries are never part of any request.</p></div>
+          </details>
+          <details>
+            <summary>Does it work without internet?</summary>
+            <div class="answer"><p>Yes. After the first visit a service worker keeps the app on your device, so you can add and review entries offline.</p></div>
+          </details>
+          <details>
+            <summary>Can I sync between my phone and computer?</summary>
+            <div class="answer"><p>Not automatically, because there is no server to sync through. Open <strong>More, Backup and Restore</strong>, save a backup file, and restore it on the other device.</p></div>
+          </details>
+          <details>
+            <summary>What happens if I clear my browser data?</summary>
+            <div class="answer"><p>Your SpendTrail entries are cleared with it, because they are stored in the browser. Make a backup first, and keep it somewhere safe.</p></div>
+          </details>
+          <details>
+            <summary>Does it convert currencies?</summary>
+            <div class="answer"><p>No. You pick one of 30 currency symbols for each profile and amounts display with it. No exchange rates are used.</p></div>
+          </details>
+          <details>
+            <summary>Is there a dark mode?</summary>
+            <div class="answer"><p>Yes, since version 4.0.17. Go to <strong>More, Appearance</strong> and choose Light or Dark.</p></div>
+          </details>
+          <details>
+            <summary>Who makes it?</summary>
+            <div class="answer"><p>SpendTrail is built and maintained by <a href="https://github.com/mananmadani" target="_blank" rel="noopener">Manan Madani</a>. Bug reports and pull requests are welcome on <a href="https://github.com/mananmadani/SpendTrail/issues" target="_blank" rel="noopener">GitHub</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="bend" data-bend></div>
+
+    <!-- Closing -->
+    <section class="section closing" aria-labelledby="closing-title">
+      <div class="wrap">
+        <h2 id="closing-title" data-stop data-end>Open it in your browser. There is nothing to sign up for.</h2>
+        <div class="hero-actions">
+          <a href="https://mananmadani.github.io/SpendTrail/" class="btn btn-solid" target="_blank" rel="noopener">Open SpendTrail
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+          </a>
+          <a href="https://github.com/mananmadani/SpendTrail" class="btn btn-line" target="_blank" rel="noopener">Star it on GitHub</a>
+        </div>
+        <p class="fine">Version 4.0.17, last updated November 2026.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="./" class="brand"><img src="assets/icons/icon-192.png" width="34" height="34" alt="">SpendTrail</a>
+        <p>A free expense and income tracker that keeps your data on your device.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="https://mananmadani.github.io/SpendTrail/" target="_blank" rel="noopener">Open the app</a>
+        <a href="https://github.com/mananmadani/SpendTrail" target="_blank" rel="noopener">Source on GitHub</a>
+        <a href="https://github.com/mananmadani/SpendTrail/issues" target="_blank" rel="noopener">Report an issue</a>
+        <a href="https://github.com/mananmadani/SpendTrail/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Changelog</a>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <a href="license.html">MIT licence</a>
+        <a href="llms.txt">llms.txt</a>
+        <a href="https://github.com/mananmadani" target="_blank" rel="noopener">Manan Madani</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025&ndash;2026 Manan Madani. Released under the MIT licence.</span>
+      <span>Your data stays on your device.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
